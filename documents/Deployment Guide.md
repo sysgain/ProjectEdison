@@ -247,7 +247,6 @@ Add the below URLS as well in the AD Application, which will be used by Mobile a
 **7th Url**: Postfix the AD application name to the url.
                 “com.onmicrosoft.<AD Application name>://redirect/”
 
-Update here
 
 ![alt text](https://github.com/sysgain/ProjectEdison/blob/master/documents/Images/d113.png)
 
