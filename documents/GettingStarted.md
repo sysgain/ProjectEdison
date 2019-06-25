@@ -1,4 +1,4 @@
-# Smart Buildings Solution
+# Safe Buildings Solution
 
 ## Getting Started Guide
 
@@ -8,7 +8,7 @@
 <!--ts-->
  - [1.0 Introduction](#10-introduction)
      - [1.1 The Internet of Things](#11-The-internet-of-things)
-     - [1.2 Overview of Smart Buildings Solution](#12-overview-of-smart-buildings-solution)
+     - [1.2 Overview of Safe Buildings Solution](#12-overview-of-safe-buildings-solution)
      - [1.3 Core components](#13-core-components)
   - [2.0 IoT Core Solution Architecture](#20-iot-core-solution-architecture)
     - [2.1 Core Architecture](#21-core-architecture)
@@ -66,7 +66,7 @@ The Internet of Things (IoT) has created a buzz in the marketplace in recent yea
 IoT becomes a pivotal component which helps to have safer cities, homes and businesses by enabling both the private and public organizations to monitor facilities on a real-time basis. The IoT brings with it the secure connections of devices such as sensors, Gateway Devices to the smartphones to mention a few here. The combination of the connected devices would enable IoT solutions to “gather data, analyze the data and create an action” which enables to perform a task in near real time.
 
 
-### 1.2 Overview of Smart Buildings Solution
+### 1.2 Overview of Safe Buildings Solution
 
 The process for notifying authorities of an emergency is standardized and dates to the 1960s.  The process for communicating into a crisis to the persons affected, however, is fragmented and not optimized.  Project Edison, a Safe Buildings solution, is a platform designed to manage this process and a way to speak into and monitor areas during a crisis event.
 
@@ -119,7 +119,7 @@ Azure Notification Hubs provides a highly scalable, cross-platform push notifica
 
 ### 2.1 Core Architecture
 
-Below Diagram explains the Core logical and techinical architecture for Smart Buildings solution.
+Below Diagram explains the Core logical and techinical architecture for Safe Buildings solution.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/blob/master/documents/Images/g0.png)
 
