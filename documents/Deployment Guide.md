@@ -481,7 +481,7 @@ In the parameters section of the template, specify the values as inputs when dep
 |-------------------------|--------------------------------------------------|------------------------- |--------------------------- |   
 | **solution type**       | The type of Solution                 |                 | Project-Edison                  |
 | **DeploymentType**      | choose your deploymenttype to deploy     | Basic or Standard or Premium |              |
-| **geo-paired-region**       | Select the geopaired region as deployment region, for more information about the geo-paired-region navigate to section 4 in the Getting Started Document(https://github.com/sysgain/ProjectEdison/blob/master/documents/GettingStarted.md)  | EastUS2, CentralUS, WestUS2, WestCentralUS, CanadaCentral, CanadaEast, AustraliaEast, AustraliaSout,hEast, CentralIndia, SouthIndia, EastAsia, SouthEastAsia, JapanWest, JapanEast, KoreaCentral, KoreaSouth, UKSouth, UKWest             |            |
+| **geo-paired-region**       | Select the geopaired region as deployment region, for more information about the geo-paired-region navigate to section 4 in the Getting Started Document(https://github.com/litebulb/ProjectEdison/blob/master/documents/GettingStarted.md)  | EastUS2, CentralUS, WestUS2, WestCentralUS, CanadaCentral, CanadaEast, AustraliaEast, AustraliaSout,hEast, CentralIndia, SouthIndia, EastAsia, SouthEastAsia, JapanWest, JapanEast, KoreaCentral, KoreaSouth, UKSouth, UKWest             |            |
 | **signalRlocation**            | Choose location for signalR to deploy         | AustraliaEast, CanadaEast, CentralUS, EastUS2, EastUS, JapanEast, NorthEurope, SouthCentralUS, SoutheastAsia, UKSouth, WestEurope, WestUS2, WestUS           | EastUS2         |   
 | **signalRlocationDr**          | If deploymenttype is choosen as premium, enter location for signalRlocationDr for disaster recovery.              | AustraliaEast, CanadaEast, CentralUS, EastUS2, EastUS, JapanEast,NorthEurope, SouthCentralUS, SoutheastAsia, UKSouth, WestEurope, WestUS2, WestUS              | CentralUS      |                            
 | **acrDeploymentLocation** | Choose location for Azure container Registry to deploy.       | JapanEast, JapanWest, AustraliaSouthEast, AustraliaEast, CanadaCentral, CanadaEast, CentralIndia, SouthIndia, CentralUS, EastUS2, SouthEastAsia, EastAsia, WestCentralUS, WestUS2       |               |                                                                                     
@@ -717,7 +717,7 @@ Deployment can proceed within the Azure Portal via Windows PowerShell.
  
 6.	Download the **main-template.parameters.json** in your local system from the below  URL, paste it in  an editor , update the values and save it.
 
-https://github.com/sysgain/ProjectEdison/blob/master/main-template.parameters.json
+https://github.com/litebulb/ProjectEdison/blob/master/main-template.parameters.json
 
 7.	Update the following parameters in **main-template.parameters.json file.**
 
@@ -897,7 +897,7 @@ Save the API URL , will be used to update the values in environment file.
 
 11. Below is the link table containing the keys and references of the value to be taken from.
 
-    **https://github.com/sysgain/ProjectEdison/raw/master/code/input_values.docx**
+    **https://github.com/litebulb/ProjectEdison/raw/master/code/input_values.docx**
  
 ![alt text](https://github.com/sysgain/ProjectEdison/blob/master/documents/Images/d103.png)
 
