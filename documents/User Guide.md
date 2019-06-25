@@ -75,7 +75,7 @@ To install helm, execute the below command.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/7.png)
 
-1. Using **WINSCP** push your certificates to the virtual machine.
+1 Using **WINSCP** push your certificates to the virtual machine.
 
    Switch user to **adminuser** and install **unzip** using the below command.
 
@@ -85,7 +85,7 @@ To install helm, execute the below command.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/8.png) 
 
-2. Unzip the certificate using the below command.
+2 Unzip the certificate using the below command.
 
    **Command: unzip Kubernetes_certs.zip**
 
