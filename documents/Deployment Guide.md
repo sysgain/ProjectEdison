@@ -462,7 +462,7 @@ After the Account is created, navigate to settings (icon) and note down the Auth
 
 ![alt text](https://github.com/sysgain/ProjectEdison/blob/master/documents/Images/d53.png)
 
-## 3.7 Domain Certificate
+### 3.7 Domain Certificate
 
 Buy a valid domain name and SSL certificate from the Domain register.
 
