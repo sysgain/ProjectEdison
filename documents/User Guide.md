@@ -205,15 +205,15 @@ For checking status of services using the namespace kube-system
 
 ## 3.0 Manual configuration
 
-1. Copy the API URL from Hosts.
+1). Copy the API URL from Hosts.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/ug3.png)
  
-2.	Update in the messaging endpoint of Bot Channel Registration and click on Save.
+2).	Update in the messaging endpoint of Bot Channel Registration and click on Save.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/ug4.png)
  
-3.	Update the reply URL of the azure active directory application with admin URL from Hosts and Click on Save.
+3).	Update the reply URL of the azure active directory application with admin URL from Hosts and Click on Save.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/ug5.png)
 
@@ -230,63 +230,63 @@ Initially there are no events triggered.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/27.png)
 
-1. For **configuring raspberry pi** and devices follow below documentation. 
+1). For **configuring raspberry pi** and devices follow below documentation. 
 
 [Device Configuration Documentation](https://github.com/sysgain/ProjectEdison/raw/master/documents/deviceconfiguration.docx)
 
-2. Follow the below document to configure the simulator. 
+2). Follow the below document to configure the simulator. 
 
-   [Simulator Documentation](https://github.com/sysgain/ProjectEdison/raw/master/documents/simulator.docx)
+[Simulator Documentation](https://github.com/sysgain/ProjectEdison/raw/master/documents/simulator.docx)
 
-3. Once any event gets triggered from devices or simulator it will get reflected in the Edison admin portal as shown below. 
+3). Once any event gets triggered from devices or simulator it will get reflected in the Edison admin portal as shown below. 
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/28.jpg)
 
-4. To **view the devices** which got created or onboarded click on the **wi-fi** icon as shown below. Here you can also see the location, type, current response of the devices.
+4). To **view the devices** which got created or onboarded click on the **wi-fi** icon as shown below. Here you can also see the location, type, current response of the devices.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/29.png)
 
-5. To create or generate an alert, click on **Activate Response**.
+5). To create or generate an alert, click on **Activate Response**.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/30.png)
 
-6. Select the **activity**.
+6). Select the **activity**.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/31.png)
 
-7. **Click and hold** on **Activate** icon to get triggered.
+7). **Click and hold** on **Activate** icon to get triggered.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/32.png)
 
-8. Once activated will be shown in Responses.
+8). Once activated will be shown in Responses.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/33.png)
 
-9. Set **location** on map.
+9). Set **location** on map.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/34.png)
 
-10. Click on **Done**.
+10). Click on **Done**.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/35.png)
 
-11. The History of All the Activities which are occurred in the selected interval of date, go to History blade as shown below. 
+11). The History of All the Activities which are occurred in the selected interval of date, go to History blade as shown below. 
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/36.png)
 
-12.	select the **Start date** and **End Date** from the Calendar on right side of the field and click on “Download” button.
+12).	select the **Start date** and **End Date** from the Calendar on right side of the field and click on “Download” button.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/37.png)
 
-13.	Once the download is completed it will generate an excel sheet consists of all the events occurred in the selected date interval.
+13).	Once the download is completed it will generate an excel sheet consists of all the events occurred in the selected date interval.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/38.png)
 
-14. To update the Activity Activation message and Deactivation message, primary and secondary radius distance, go to settings blade and select the Activity which you want to modify.
+14). To update the Activity Activation message and Deactivation message, primary and secondary radius distance, go to settings blade and select the Activity which you want to modify.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/39.png)
 
-15.	Modify the Activation message or Deactivation message as per requirement and increase/decrease the Primary and Secondary radius of the Activity as shown below. Once done click on **SAVE CHANGES** button.
+15).	Modify the Activation message or Deactivation message as per requirement and increase/decrease the Primary and Secondary radius of the Activity as shown below. Once done click on **SAVE CHANGES** button.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/40.png)
 
@@ -294,23 +294,23 @@ Initially there are no events triggered.
 
 We need to create an application in the Firebase from which will get an API Key and google-services.json file, these are used in the User Mobile application configuration.
 
-1. Click on the below link to follow the steps to **create a project in Firebase**.
+1). Click on the below link to follow the steps to **create a project in Firebase**.
 
 [Firebase Documentation](https://github.com/sysgain/ProjectEdison/raw/master/documents/firebase.docx)
 
-2. In the Firebase console, select the **settings** icon for your project. Then select Project Settings.
+2). In the Firebase console, select the **settings** icon for your project. Then select Project Settings.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/41.png)
 
-3. If you haven't downloaded the **google-services.json** file before, you can do so on this page.
+3). If you haven't downloaded the **google-services.json** file before, you can do so on this page.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/42.png)
 
-4. Switch to the **Cloud Messaging** tab at the top.
+4). Switch to the **Cloud Messaging** tab at the top.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/43.png)
 
-5. **Copy** and **save** the **Legacy Server key** for later use. You use this value to configure your notification hub.
+5). **Copy** and **save** the **Legacy Server key** for later use. You use this value to configure your notification hub.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/44.png)
 
@@ -318,25 +318,25 @@ We need to create an application in the Firebase from which will get an API Key 
 
 ## 6.0 Mobile Application Configuration
 
-1. Follow the below link to configure and build the User mobile application.
+1). Follow the below link to configure and build the User mobile application.
 
 [Mobile Application Configuration](https://github.com/sysgain/ProjectEdison/raw/master/documents/mobile_application.docx)
 
-2. Navigate to Portal -> **Notification Hub** -> Select **Google** from Settings and **paste** the **Legacy Server Key** copied from step 6 of section 5 in API Key. Click on **Save**.
+2). Navigate to Portal -> **Notification Hub** -> Select **Google** from Settings and **paste** the **Legacy Server Key** copied from step 6 of section 5 in API Key. Click on **Save**.
 
-3. We need to create **Emulator** of Android Version 8.1 in visual studio. Open Visual Studio and select the **Tools** -> **Android** -> **Android Device Manager**.
+3). We need to create **Emulator** of Android Version 8.1 in visual studio. Open Visual Studio and select the **Tools** -> **Android** -> **Android Device Manager**.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/46.png)
 
-4. Select Yes from the pop-up window and then we will get the below screen.
+4). Select Yes from the pop-up window and then we will get the below screen.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/47.png)
 
-5. Click on **+ New** to create a new Emulator from right hand side menu.
+5). Click on **+ New** to create a new Emulator from right hand side menu.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/48.png)
 
-6. The below screen will appear, provide unique name to Emulator and modify the ram to 2GB and click on **create** button.
+6). The below screen will appear, provide unique name to Emulator and modify the ram to 2GB and click on **create** button.
 
 **Note:** The Android os version should be 8.1-API 27
 
@@ -344,17 +344,17 @@ We need to create an application in the Firebase from which will get an API Key 
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/50.png)
 
-7. The Emulator will take few seconds to create, close the **Android Device Manager window**.
+7). The Emulator will take few seconds to create, close the **Android Device Manager window**.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/51.png)
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/52.png)
 
-8. Re-open the Mobile application source code in Visual studio, the created Emulator will get displayed as shown below.
+8). Re-open the Mobile application source code in Visual studio, the created Emulator will get displayed as shown below.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/53.png)
 
-9. Click on the created **Emulator** to run the User Mobile application. 
+9). Click on the created **Emulator** to run the User Mobile application. 
 
 **Note:** Set the default project to **Edison.Mobile.User.Client.Droid** and select the **Android User** from top menu.
 
@@ -362,58 +362,58 @@ We need to create an application in the Firebase from which will get an API Key 
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/55.png)
 
-10. Click on **Sign up** now for First time user in your Mobile.
+10). Click on **Sign up** now for First time user in your Mobile.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/56.png)
 
-11.	Enter the details to create a **Login** and click on **Send Verification code**.
+11).	Enter the details to create a **Login** and click on **Send Verification code**.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/57.png)
 
-12. Once you mail is verified, click on **verify** code after entering the code for verification.
+12). Once you mail is verified, click on **verify** code after entering the code for verification.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/ug2.png)
 
-13.	**Sign in** with the created username and password.
+13).	**Sign in** with the created username and password.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/59.png)
 
-14. Click on **report activity** to send message in case of any activity.
+14). Click on **report activity** to send message in case of any activity.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/60.png)
 
-15. Enter your message.
+15). Enter your message.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/61.png)
 
-16. The report will be activated in Edison Admin portal application.
+16). The report will be activated in Edison Admin portal application.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/62.png)
 
-17. Similarly, the vice-versa communication can be done from Edison Admin Portal to User Mobile application.
+17). Similarly, the vice-versa communication can be done from Edison Admin Portal to User Mobile application.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/63.png)
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/64.png)
 
-18.	The test notification message can be sent to User Mobile application using Notification Hub’s test send button as shown below. 
+18).	The test notification message can be sent to User Mobile application using Notification Hub’s test send button as shown below. 
 
 **Note:** select Platforms to **Android** and click on **send** button.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/65.png)
 
-19.	Once the notification is successfully sent, you will get the success notification message in portal.
+19).	Once the notification is successfully sent, you will get the success notification message in portal.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/66.png)
 
-20.	We can see the notification alert in the user mobile application as below.
+20).	We can see the notification alert in the user mobile application as below.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/67.png)
 
-21.	Similarly, when we create any **Activated Response** in the Edison Admin Portal then we will get alert popup for it in User Mobile application, as shown below.
+21).	Similarly, when we create any **Activated Response** in the Edison Admin Portal then we will get alert popup for it in User Mobile application, as shown below.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/68.png)
 
-22. Similarly, we can validate the User Mobile application functionality on IOS Platform.
+22). Similarly, we can validate the User Mobile application functionality on IOS Platform.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/69.png)
