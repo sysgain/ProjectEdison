@@ -577,7 +577,7 @@ Prices are calculated by considering Location as **East US** and Pricing Model a
 | **Signal R**   | Free Tier, Includes 1 unit with 20 concurrent connections per unit and 20,000 messages per unit/day      | $0.00
 | **Redis Cache**   | C0: Basic tier, 1 instance(s), 730 Hours      | $16.06
 | **Bot**   | Free Tier  Standard Channels- Unlimited messages included.  Premium Channels- 10,000 messages included.      | $0.00
-|        |         |    **Total Cost/Month**     | **$282.95** 
+|           |    **Total Cost/Month**     | **$282.95** 
 
 
 #### 3.1.2 Standard
@@ -610,8 +610,8 @@ Prices are calculated by Location as **East US** and Pricing Model as **“PAYG�
 | **Redis Cache**   | C0: Standard tier, 1 instance(s), 730 Hoursx $40.15     | $40.15
 | **Bot**   | Standard Tier  Standard Channels- Unlimited messages included.  Premium Channels- 10,000 messages x $0.50 included.      | $0.50
 | **Traffic Manager**   | 2 * DNS Query $0.54 + Azure Endpoint $0.36       | $1.80
-|        |         |    **Estimated monthly cost (With Traffic Manager)**     | **$369.66** 
-|        |         |    **Estimated monthly cost (Without Traffic Manager)**     | **$367.86** 
+|           |    **Estimated monthly cost (With Traffic Manager)**     | **$369.66** 
+|           |    **Estimated monthly cost (Without Traffic Manager)**     | **$367.86** 
 
 **Note: When we redeploy the solution, there will not be any extra cost, since primary region is already paid.** 
 
@@ -643,8 +643,8 @@ Prices are calculated by Considering Location as **East US** and Pricing Model a
 | **Redis Cache**   | 2 * [ C0: Standard tier, 1 instance(s), 730 Hours X $40.15]      | $80.30
 | **Bot**   | Standard Tier  Standard Channels- Unlimited messages included.  Premium Channels- 10,000 messages included.      | $0.50
 | **Traffic Manager**   | 2 * DNS Query $0.54 + Azure Endpoint $0.36       | $1.80
-|        |         |    **Estimated monthly cost (With Traffic Manager)**     | **$602.39‬** 
-|        |         |    **Estimated monthly cost (Without Traffic Manager)**     | **$600.59** 
+|              |    **Estimated monthly cost (With Traffic Manager)**     | **$602.39‬** 
+|             |    **Estimated monthly cost (Without Traffic Manager)**     | **$600.59** 
 
 ### 3.2 Cost Comparison 
 
