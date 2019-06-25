@@ -165,7 +165,7 @@ Any application that wants to use the capabilities of Azure AD must first be reg
 
 ![alt text](https://github.com/sysgain/ProjectEdison/blob/master/documents/Images/d112.png)
  
-2. Paste the below content in the appRoles with Admin and Comsumer user object id under the allowedMemberTypes as shown below.
+2. Paste the below content in the appRoles with Admin and Consumer user object id under the allowedMemberTypes as shown below.
 
 **Note**: 
 
