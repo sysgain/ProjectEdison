@@ -51,7 +51,6 @@ For creating config maps, execute the below script.
 
 **Command: sh set-kubernetes-config8.sh**
 
-
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/4.png)
 
 Once the script gets executed successfully, we can see the created config maps using below command. 
@@ -78,23 +77,23 @@ To install helm, execute the below command.
 
 1. Using **WINSCP** push your certificates to the virtual machine.
 
-Switch user to **adminuser** and install **unzip** using the below command.
+   Switch user to **adminuser** and install **unzip** using the below command.
 
-**Command: sudo apt install unzip**
+   **Command: sudo apt install unzip**
 
-**Note:** Refer 3.7 Section of Deployment Guide Document for certificate.
+   **Note:** Refer 3.7 Section of Deployment Guide Document for certificate.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/8.png) 
 
 2. Unzip the certificate using the below command.
 
-**Command: unzip Kubernetes_certs.zip**
+  **Command: unzip Kubernetes_certs.zip**
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/9.png)
 
 3. Copy the file to another file.
 
-**Command: cat 2289f3206db82816.crt gd_bundle-g2-g1.crt > xxxxxxxx-xxx.com.chained.crt**
+  **Command: cat 2289f3206db82816.crt gd_bundle-g2-g1.crt > xxxxxxxx-xxx.com.chained.crt**
 
 4. switch to **root** user and go to **/var/lib/waagent/custom-script/download/0**
 
@@ -102,11 +101,11 @@ Switch user to **adminuser** and install **unzip** using the below command.
 
 5. Create **secrets** using the below commands:
 
-**Command: kubectl create secret tls <adminsecret name> --cert /home/adminuser/<xxxxxxxx>.com.<xxxxx.crt> --key /home/adminuser/<xxxxxx.key>**  
+  **Command: kubectl create secret tls <adminsecret name> --cert /home/adminuser/<xxxxxxxx>.com.<xxxxx.crt> --key /home/adminuser/<xxxxxx.key>**  
  
-**Command: kubectl create secret tls <apisecret name> --cert /home/adminuser/<xxxxxxxx>.com.<xxxxx.crt> --key /home/adminuser/<xxxxxxx.key>** 
+  **Command: kubectl create secret tls <apisecret name> --cert /home/adminuser/<xxxxxxxx>.com.<xxxxx.crt> --key /home/adminuser/<xxxxxxx.key>** 
 
-**Command: kubectl get secrets**
+  **Command: kubectl get secrets**
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/ug1.png)
 
