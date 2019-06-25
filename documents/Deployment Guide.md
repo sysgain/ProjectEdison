@@ -1,4 +1,4 @@
-# Smart Buildings Solution  
+# Safe Buildings Solution  
 
 ## Deployment Guide
 
