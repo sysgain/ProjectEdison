@@ -85,21 +85,21 @@ Switch user to **adminuser** and install **unzip** using the below command.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/8.png) 
 
-2 Unzip the certificate using the below command.
+2). Unzip the certificate using the below command.
 
 **Command: unzip Kubernetes_certs.zip**
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/9.png)
 
-3 Copy the file to another file.
+3). Copy the file to another file.
 
 **Command: cat 2289f3206db82816.crt gd_bundle-g2-g1.crt > xxxxxxxx-xxx.com.chained.crt**
 
-4 switch to **root** user and go to **/var/lib/waagent/custom-script/download/0**
+4). switch to **root** user and go to **/var/lib/waagent/custom-script/download/0**
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/10.png)
 
-5 Create **secrets** using the below commands:
+5). Create **secrets** using the below commands:
 
 **Command: kubectl create secret tls <adminsecret name> --cert /home/adminuser/<xxxxxxxx>.com.<xxxxx.crt> --key /home/adminuser/<xxxxxx.key>**  
  
@@ -109,7 +109,7 @@ Switch user to **adminuser** and install **unzip** using the below command.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/ug1.png)
 
-6 Update name of **hosts** and ****Secrets** in nginix config files.
+6). Update name of **hosts** and ****Secrets** in nginix config files.
 
 a. sed -i -e 's/edisonadminportal.eastus.cloudapp.azure.com/'<**admin URL**>'/g' ProjectEdison/Edison.Web/Kubernetes/qa/Deployment/Ingress_Custom/nginx-config-adminportal.yaml
 
@@ -136,7 +136,7 @@ d. **sed -i -e 's/tls-secret-api/**'<**apisecret**>'/g' ProjectEdison/Edison.Web
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/d.png)
 
-7 Assign a **static-IP** to an Ingress on through the Nginx controller.
+7). Assign a **static-IP** to an Ingress on through the Nginx controller.
 
 a. **On Admin:**
 
@@ -160,7 +160,7 @@ b. **On API:**
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/16.png)
 
-8 Install the NGINX Ingress controller into the system namespace using the existing static IP address and as AKS is not RBAC enabled, the command needs to set RBAC related values to false. 
+8). Install the NGINX Ingress controller into the system namespace using the existing static IP address and as AKS is not RBAC enabled, the command needs to set RBAC related values to false. 
 
 **On Admin:**
 
@@ -174,7 +174,7 @@ b. **On API:**
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/18.png)
 
-9 For creating config file navigate to Ingress_Custom folder. 
+9). For creating config file navigate to Ingress_Custom folder. 
 
 **Command: cd ProjectEdison/Edison.Web/Kubernetes/qa/Deployment/Ingress_Custom**
 
