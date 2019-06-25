@@ -227,18 +227,25 @@ Select user then you will redirect to selected **user profile** and copy the **O
 ![alt text](https://github.com/sysgain/ProjectEdison/blob/master/documents/Images/d13.png)
 
 Add the below URLS as well in the AD Application, which will be used by Mobile application.
+
 **1st Url** : Edison Admin Portal Application
+
 **2nd Url** : It should be your tenant domain name i.e., 
-                **“com.onmicrosoft.<tenant domain name>//redirect”**
+                “com.onmicrosoft.<tenant domain name>//redirect”
+	
 **3rd Url** : It’s a OAuth URL, so no change. 
-                **“https://login.microsoftonline.com/tfp/oauth2/nativeclient”**
+                “https://login.microsoftonline.com/tfp/oauth2/nativeclient”
+		
 **4th Url**: Prefix the URL with the AD application name. 
-                **“http://<AD App name>.azurewebsites.net”**
-**5th Url**: Add the AD Application ID prefixed with msal.  **“msal<AD application ID>://auth”**
+                “http://<AD App name>.azurewebsites.net”
+	
+**5th Url**: Add the AD Application ID prefixed with msal.  “msal<AD application ID>://auth”
+	
 **6th Url**: Its also OAuth URL, so keep it without changing  
-                **“https://login.microsoftonline.com/common/oauth2/nativeclient”**
+                “https://login.microsoftonline.com/common/oauth2/nativeclient”
+		
 **7th Url**: Postfix the AD application name to the url.
-                **“com.onmicrosoft.<AD Application name>://redirect/”**
+                “com.onmicrosoft.<AD Application name>://redirect/”
 
 Update here
 
