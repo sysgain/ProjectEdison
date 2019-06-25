@@ -536,7 +536,7 @@ Resource manager provides the following feature:
 
 1.	Click the below **Git hub** repo URL.
 
-    https://github.com/sysgain/ProjectEdison/tree/master 
+https://github.com/litebulb/ProjectEdison/tree/master 
 
 2. Select **main-template.json** from **Master** branch as shown in the following figure.
 
