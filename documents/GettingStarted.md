@@ -192,7 +192,7 @@ Basic Architecture comprises of following components:
 
 *	1- Azure Container Registry
 
-*	2- Virtual Machine (Linux and Windows)
+*	1- Virtual Machine (Linux)
 
 *	1- Service Bus
 
@@ -239,7 +239,7 @@ Standard Architecture comprises of following components:
 
 *	2- Traffic Manager Profiles
 
-*   2- Virtual Machines (Linux and Windows) 
+* 1- Virtual Machine(Linux) 
 
 **When there is a Region failover, user needs to redeploy ARM Template provided in GIT Repo.**
 
@@ -321,7 +321,7 @@ Premium Architecture comprises of following components:
 
 *	1- IoT Hub
 
-*	2-Virtual Machine (1 Linux, 1 Windows)
+*	1-Virtual Machine (Linux)
 
 *	2- Service Bus
 
