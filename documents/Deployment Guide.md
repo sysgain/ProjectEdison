@@ -24,6 +24,7 @@
         - [3.4.1 Create an Application in Azure B2C](#341-create-an-application-in-azure-b2c)
     - [3.5 Create an Azure Service Principal with Azure CLI](#35-create-an-azure-service-principal-with-azure-cli)
     - [3.6 Create a Twilio Account](#36-create-a-twilio-account)
+    - [3.7 Domain Certificate](#37-domain-certificate)
 - [4.0 ARM Template Input Parameters](#40-arm-template-input-parameters)
 - [5.0 Getting Started](#50-getting-started)
     - [5.1 ARM Template Deployment Using Azure Portal](#51-arm-template-deployment-using-azure-portal)
@@ -460,6 +461,10 @@ Browse to the below link and create a Twilio Account
 After the Account is created, navigate to settings (icon) and note down the Auth Token.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/blob/master/documents/Images/d53.png)
+
+## 3.7 Domain Certificate
+
+Buy a valid domain name and SSL certificate from the Domain register.
 
 ## 4.0 ARM Template Input Parameters
 
