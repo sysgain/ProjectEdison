@@ -87,13 +87,13 @@ To install helm, execute the below command.
 
 2. Unzip the certificate using the below command.
 
-  **Command: unzip Kubernetes_certs.zip**
+   **Command: unzip Kubernetes_certs.zip**
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/9.png)
 
 3. Copy the file to another file.
 
-  **Command: cat 2289f3206db82816.crt gd_bundle-g2-g1.crt > xxxxxxxx-xxx.com.chained.crt**
+   **Command: cat 2289f3206db82816.crt gd_bundle-g2-g1.crt > xxxxxxxx-xxx.com.chained.crt**
 
 4. switch to **root** user and go to **/var/lib/waagent/custom-script/download/0**
 
@@ -101,51 +101,52 @@ To install helm, execute the below command.
 
 5. Create **secrets** using the below commands:
 
-  **Command: kubectl create secret tls <adminsecret name> --cert /home/adminuser/<xxxxxxxx>.com.<xxxxx.crt> --key /home/adminuser/<xxxxxx.key>**  
+   **Command: kubectl create secret tls <adminsecret name> --cert /home/adminuser/<xxxxxxxx>.com.<xxxxx.crt> --key /home/adminuser/<xxxxxx.key>**  
  
-  **Command: kubectl create secret tls <apisecret name> --cert /home/adminuser/<xxxxxxxx>.com.<xxxxx.crt> --key /home/adminuser/<xxxxxxx.key>** 
+   **Command: kubectl create secret tls <apisecret name> --cert /home/adminuser/<xxxxxxxx>.com.<xxxxx.crt> --key /home/adminuser/<xxxxxxx.key>** 
 
-  **Command: kubectl get secrets**
+   **Command: kubectl get secrets**
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/ug1.png)
 
 6. Update name of **hosts** and ****Secrets** in nginix config files.
 
-a. sed -i -e 's/edisonadminportal.eastus.cloudapp.azure.com/'<**admin URL**>'/g' ProjectEdison/Edison.Web/Kubernetes/qa/Deployment/Ingress_Custom/nginx-config-adminportal.yaml
+  a. sed -i -e 's/edisonadminportal.eastus.cloudapp.azure.com/'<**admin URL**>'/g' ProjectEdison/Edison.Web/Kubernetes/qa/Deployment/Ingress_Custom/nginx-config-adminportal.yaml
 
 **Ex:**
 
-sed -i -e 's/edisonadminportal.eastus.cloudapp.azure.com/'basicadmin.xxxxx-xxx.com'/g' ProjectEdison/Edison.Web/Kubernetes/qa/Deployment/Ingress_Custom/nginx-config-adminportal.yaml
+  sed -i -e 's/edisonadminportal.eastus.cloudapp.azure.com/'basicadmin.xxxxx-xxx.com'/g' ProjectEdison/Edison.Web/Kubernetes/qa/Deployment/Ingress_Custom/nginx-config-adminportal.yaml
 
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/12.png)
 
-b.  **sed -i -e 's/tls-secret-adminportal/'<**adminsecret name**>'/g' ProjectEdison/Edison.Web/Kubernetes/qa/Deployment/Ingress_Custom/nginx-config-adminportal.yaml**
+  b.  **sed -i -e 's/tls-secret-adminportal/'<**adminsecret name**>'/g' ProjectEdison/Edison.Web/Kubernetes/qa/Deployment/Ingress_Custom/nginx-config-adminportal.yaml**
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/13.png)
 
-c.  **sed -i -e 's/edisonapi.eastus.cloudapp.azure.com/'<**api URL**>'/g' ProjectEdison/Edison.Web/Kubernetes/qa/Deployment/Ingress_Custom/nginx-config-api.yaml**
+  c.  **sed -i -e 's/edisonapi.eastus.cloudapp.azure.com/'<**api URL**>'/g' ProjectEdison/Edison.Web/Kubernetes/qa/Deployment/Ingress_Custom/nginx-config-api.yaml**
   
-Ex:  
-sed -i -e 's/edisonapi.eastus.cloudapp.azure.com/'**<basicapi.xxxxx-xxx.com>**'/g' ProjectEdison/Edison.Web/Kubernetes/qa/Deployment/Ingress_Custom/nginx-config-api.yaml
+**Ex:** 
+
+  sed -i -e 's/edisonapi.eastus.cloudapp.azure.com/'**<basicapi.xxxxx-xxx.com>**'/g' ProjectEdison/Edison.Web/Kubernetes/qa/Deployment/Ingress_Custom/nginx-config-api.yaml
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/14.png)
 
-d.  **sed -i -e 's/tls-secret-api/**'<**apisecret**>'/g' ProjectEdison/Edison.Web/Kubernetes/qa/Deployment/Ingress_Custom/nginx-config-api.yaml**
+  d.  **sed -i -e 's/tls-secret-api/**'<**apisecret**>'/g' ProjectEdison/Edison.Web/Kubernetes/qa/Deployment/Ingress_Custom/nginx-config-api.yaml**
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/d.png)
 
 7. Assign a **static-IP** to an Ingress on through the Nginx controller.
 
-a.  **On Admin:**
+  a.  **On Admin:**
 
-**az network public-ip create -g** <**Cluster Resource Group Name**>-n <**name of admin ip**> --dns-name <**admin dns name**> --allocation-method static**
+  **az network public-ip create -g** <**Cluster Resource Group Name**>-n <**name of admin ip**> --dns-name <**admin dns name**> --allocation-method static**
 
 **Ex:**
 
-**az network public-ip create -g MC_MO_basic_2304_akswih6_eastus2 -n adminbotip --dns-name dnsbotadmin --allocation-method static**
+  **az network public-ip create -g MC_MO_basic_2304_akswih6_eastus2 -n adminbotip --dns-name dnsbotadmin --allocation-method static**
 
-**Copy** the **admin static IP** and **save** it.
+  **Copy** the **admin static IP** and **save** it.
 
 ![alt text](https://github.com/sysgain/ProjectEdison/raw/master/documents/Images/15.png)
 
